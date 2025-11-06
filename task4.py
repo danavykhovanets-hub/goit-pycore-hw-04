@@ -5,9 +5,6 @@ def parse_input(user_input):
     return cmd, args
 
 
-# Словник для зберігання контактів
-contacts = {}
-
 #Команди бота
 def add_contact(args, contacts):
     if len(args) != 2:
@@ -51,6 +48,7 @@ def show_all(contacts):
 
 
 def main():
+    contacts = {} # Словник для зберігання контактів
     print("Welcome to the assistant bot!")
     while True:
         user_input = input("Enter a command: ")
